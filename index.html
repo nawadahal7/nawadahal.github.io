@@ -75,6 +75,26 @@
             text-decoration: underline;
             text-underline-offset: 3px;
         }
+        .research-equation {
+            text-align: center;
+        }
+
+        .research-figure {
+            max-width: 800px;
+            margin: 28px auto;
+        }
+
+        .research-figure img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .research-figure figcaption {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #555;
+        }
     </style>
 </head>
 
@@ -140,6 +160,51 @@
             <p>
                 <a href="nawa-dahal-honors-thesis.pdf" target="_blank" rel="noopener noreferrer">Read the full honors thesis (PDF)</a>
             </p>
+        </article>
+
+        <article>
+            <h3>Photovoltaic Extension of a Drift–Diffusion–Poisson Solver</h3>
+
+            <p>
+                Independent post-thesis extension · Summer 2026
+            </p>
+
+            <p>
+                Building on the numerical framework developed in my honors thesis, I independently extended my
+                one-dimensional steady-state drift–diffusion–Poisson solver from dark PN-junction transport to
+                illuminated solar-cell simulation. Optical generation was modeled using the Beer–Lambert law,
+            </p>
+
+            <p class="research-equation">
+                <em>G</em>(<em>x</em>) = <em>G</em><sub>0</sub>e<sup>−<em>αx</em></sup>,
+            </p>
+
+            <p>
+                and incorporated into the electron and hole continuity equations through the net source term
+                <em>U</em> = <em>R</em> − <em>G</em>, where <em>R</em> is Shockley–Read–Hall recombination.
+                At each terminal voltage, I coupled a quasi-linearized Poisson solve with Scharfetter–Gummel
+                discretizations of the carrier-continuity equations inside a Gummel iteration. A terminal-voltage
+                sweep then produced the illuminated <em>J</em>–<em>V</em> characteristic and allowed me to compute
+                the short-circuit current density, open-circuit voltage, maximum-power point, and fill factor.
+            </p>
+
+            <p>
+                Among the computational results produced by this extension, the illuminated <em>J</em>–<em>V</em>
+                curve below is my favorite.
+            </p>
+
+            <figure class="research-figure">
+                <img src="solar-cell-jv-mpp.png" width="2898" height="1887"
+                     alt="Scaled illuminated J–V curve decreasing from the short-circuit current density Jsc at zero voltage to the open-circuit voltage Voc at zero current. The maximum-power point (MPP) is marked near the bend; a shaded rectangle from the origin to MPP represents the maximum output-power density."
+                     loading="lazy">
+                <figcaption>
+                    Scaled illuminated <em>J</em>–<em>V</em> characteristic of the simulated PN junction.
+                    The marked points show the short-circuit current density <em>J</em><sub>sc</sub>,
+                    open-circuit voltage <em>V</em><sub>oc</sub>, and maximum-power point; the shaded rectangle
+                    represents the maximum output-power density
+                    <em>P</em><sub>max</sub> = <em>V</em><sub>m</sub><em>J</em><sub>m</sub>.
+                </figcaption>
+            </figure>
         </article>
 
         <article>
