@@ -81,9 +81,10 @@
 <body>
 
 <nav>
-    <a href="index.html" aria-current="page">Home</a>
-    <a href="research.html">Research</a>
+    <a href="#research">Research</a>
+    <a href="Expository_Notes_in_Dynamical_Systems.pdf" target="_blank" rel="noopener noreferrer">Expository Notes</a>
     <a href="nawa-dahal-cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+    <a href="#contact">Contact</a>
 </nav>
 
 <header>
@@ -114,8 +115,51 @@
         </p>
     </section>
 
-    <section>
+    <section id="research">
         <h2>Research</h2>
+
+        <article>
+            <h3>Analysis and Numerical Investigation of Nonlinear Semiconductor Drift–Diffusion Systems</h3>
+
+            <p>
+                Honors Research Thesis · San José State University · May 2026<br>
+                Advisor: Dr. Daniel Brinkman
+            </p>
+
+            <p>
+                I investigated one-dimensional semiconductor p–n junction models governed by coupled nonlinear
+                Poisson–Boltzmann and drift–diffusion equations. I developed and analyzed finite-difference and
+                Scharfetter–Gummel discretizations, studied convergence through contraction arguments and spectral
+                properties of the discrete Laplacian, and showed that the quasi-linearized Poisson–Boltzmann iteration
+                is mathematically equivalent to Newton’s method for the discrete system. I then implemented a
+                quasi-linearized Gummel solver for equilibrium and applied-bias conditions, obtaining current-conserving
+                numerical solutions and J–V characteristics consistent with the expected behavior of a silicon diode
+                and the classical Shockley model.
+            </p>
+
+            <p>
+                <a href="nawa-dahal-honors-thesis.pdf" target="_blank" rel="noopener noreferrer">Read the full honors thesis (PDF)</a>
+            </p>
+        </article>
+
+        <article>
+            <h3>A Matrix-Based Perspective on Multi-Level Richardson Extrapolation</h3>
+
+            <p>
+                Single-author paper · Accepted for publication in SIAM Undergraduate Research Online (SIURO)<br>
+                Project advisor: Dr. Mohammad Saleem
+            </p>
+
+            <p>
+                I studied multi-level Richardson extrapolation for numerical integration from a linear-algebraic
+                perspective. I formulated the extrapolation weights through a Vandermonde-type system and interpreted
+                them as Lagrange interpolation weights evaluated at the origin. The analysis examines how
+                truncation-error cancellation competes with matrix conditioning, extrapolation-weight growth,
+                computational cost, and floating-point roundoff. MATLAB experiments with smooth, nonsmooth, and highly
+                oscillatory integrands demonstrate a problem-dependent stability window in which additional
+                extrapolation first improves accuracy and eventually becomes ineffective or unstable.
+            </p>
+        </article>
 
         <p>
             <a href="research.html">View research projects</a>
@@ -146,7 +190,7 @@
         </p>
     </section>
 
-    <section>
+    <section id="contact">
         <h2>Contact</h2>
 
         <p>
