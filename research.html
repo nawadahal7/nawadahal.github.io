@@ -35,12 +35,18 @@
             text-decoration: underline;
         }
 
-        nav{
-            margin-bottom:30px;
+        nav {
+            margin-bottom: 30px;
         }
 
-        nav a{
-            margin-right:15px;
+        nav a {
+            margin-right: 15px;
+        }
+
+        nav a[aria-current="page"] {
+            color: #222;
+            text-decoration: underline;
+            text-underline-offset: 3px;
         }
     </style>
 </head>
@@ -49,9 +55,8 @@
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="notes.html">Essays & Thoughts</a>
-    <a href="CV.pdf" target="_blank">CV</a>
+    <a href="research.html" aria-current="page">Research</a>
+    <a href="nawa-dahal-cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
 </nav>
 
 <h1>Research</h1>
@@ -90,7 +95,7 @@ and numerical experiments.
 One outcome of this project was a research poster presented at
 San José State University Research Day.
 
-<a href="poisson-boltzmann-poster.pdf" target="_blank">
+<a href="poisson-boltzmann-poster.pdf" target="_blank" rel="noopener noreferrer">
 Research Poster (PDF)
 </a>
 </p>
